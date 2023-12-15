@@ -1,0 +1,103 @@
+/* Estilos para el contenedor principal y formulario */
+.contenedor-principal {
+    background-color: #2D3047; /* Fondo oscuro */
+    padding: 20px;
+    border-radius: 10px;
+    color: #F4F4F9; /* Texto claro */
+    margin: 20px;
+  }
+  
+  .formulario-general {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .input-edicion {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+  }
+  
+  .btn-enviar {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .btn-enviar:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos para la tabla */
+  .tabla-general {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff; /* Fondo claro para la tabla */
+  }
+  
+  .tabla-general th, .tabla-general td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .tabla-general th {
+    background-color: #2D3047;
+    color: #F4F4F9;
+  }
+  
+  .tabla-general tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilos para botones dentro de la tabla */
+  .btn-guardar, .btn-cancelar, .btn-editar, .btn-eliminar {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .btn-guardar {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .btn-cancelar {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .btn-editar {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .btn-eliminar {
+    background-color: #ffc107;
+    color: black;
+  }
+  
+  /* Estilo para el botón de regreso */
+  .regreso-button {
+    padding: 10px 15px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .regreso-button:hover {
+    background-color: #5a6268;
+  }
+  

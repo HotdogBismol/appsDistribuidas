@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+header {
+  display: flex;
+  justify-content: space-between; /* Separa los elementos a la izquierda y a la derecha */
+  align-items: center;
+}
+
+  .header-left, .header-right {
+    display: flex;
+    align-items: center;
+  }
+
+
+  .header-container {
+    background-color: #2D3047;
+    padding: 10px;
+    text-align: right;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    height: 55px;
+    align-items: center;
+  }
+  
+  .header-image {
+    height: 40px; /* Ajusta según el tamaño deseado */
+    padding-left: 20px;
+  }
+
+  .header-username {
+    font-weight: bold;
+    color: #F4F4F9;
+    font-size: 21px;
+    font-family: 'Libre Baskerville', serif;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    padding-right: 20px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9; /* Color de fondo del menú */
+    min-width: 160px; /* Ancho mínimo del menú */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra para el menú */
+    z-index: 1;
+    right: 0;
+  }
+
+  .dropdown-link {
+    background: none;
+    border: none;
+    color: blue;
+    padding: 0;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .dropdown-content button,
+  .dropdown-content a {
+    color: black; /* Color del texto */
+    padding: 12px 16px; /* Espaciado interno */
+    text-decoration: none;
+    display: block;
+    border: none; /* Remueve bordes de los botones */
+    background: none; /* Fondo transparente para botones */
+    text-align: left; /* Alineación del texto */
+    cursor: pointer;
+    width: 100%; /* Asegura que ocupen todo el ancho disponible */
+  }
+
+  .botoncito{
+    color: black; /* Color del texto */
+    padding: 12px 16px; /* Espaciado interno */
+    text-decoration: none;
+    display: block;
+    border: none; /* Remueve bordes de los botones */
+    background: none; /* Fondo transparente para botones */
+    text-align: left; /* Alineación del texto */
+    cursor: pointer;
+    width: 100%; /* Asegura que ocupen todo el ancho disponible */
+  }
+  
+
+  .registroLink {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    font: inherit;
+    outline: inherit;
+  }
+
+
+  .dropdown-content button:hover,
+  .dropdown-content a:hover {
+    background-color: #ddd; /* Color de fondo al pasar el mouse */
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  

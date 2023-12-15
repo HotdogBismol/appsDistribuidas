@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.regreso-button-container {
+    display: flex;
+    justify-content: flex-end; /* Alinea el botón a la derecha */
+  }
+
+/* Contenedor principal */
+.contenedor-principal {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten según el ancho de la pantalla */
+    justify-content: space-around; /* Espacio alrededor de los elementos */
+    align-items: flex-start; /* Alinear al inicio */
+    padding: 20px;
+}
+
+/* Estilos de formulario */
+.formulario-general {
+    flex-basis: 52%; /* Base del tamaño del formulario */
+    max-width: 52%; /* Ancho máximo del formulario */
+    padding: 20px;
+    margin-bottom: 20px; /* Espacio debajo del formulario */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para los campos de entrada y etiquetas */
+.formulario-general label,
+.formulario-general input[type="text"],
+.formulario-general input[type="number"],
+.formulario-general input[type="email"],
+.formulario-general input[type="date"],
+.formulario-general textarea,
+.formulario-general select {
+    width: 100%; /* Llenar el ancho del formulario */
+    margin-bottom: 10px; /* Espacio entre los campos */
+}
+
+.tabla-general {
+    flex-basis: 50%;
+    max-width: 50%;
+    overflow-x: auto;
+    border-collapse: collapse; /* Elimina separaciones entre celdas */
+    border-radius: 8px; /* Esquinas redondeadas */
+    margin-bottom: 20px; /* Espacio debajo de la tabla */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    font-family: 'Montserrat Light', sans-serif;
+}
+
+.tabla-general th, .tabla-general td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: white; /* Fondo de celdas */
+    font-family: 'Montserrat Light', sans-serif;
+}
+
+.tabla-general th {
+    background-color: #2D3047;
+    color: white;
+}
+
+
+
+.btn-guardar { background-color: #4CAF50; 
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    width: 120px; /* Ancho fijo para todos los botones */
+    height: 40px; /* Altura fija para todos los botones */
+    text-align: center; /* Asegura que el texto esté centrado */
+    display: inline-block; /* Permite que los botones sean tratados como elementos en línea */
+    margin: 5px; /* Espacio alrededor de los botones */
+    font-family: 'Montserrat Light', sans-serif;}
+.btn-editar { background-color: #f0ad4e; 
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    width: 120px; /* Ancho fijo para todos los botones */
+    height: 40px; /* Altura fija para todos los botones */
+    text-align: center; /* Asegura que el texto esté centrado */
+    display: inline-block; /* Permite que los botones sean tratados como elementos en línea */
+    margin: 5px; /* Espacio alrededor de los botones */
+    font-family: 'Montserrat Light', sans-serif;}
+.btn-eliminar { background-color: #d9534f; 
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    width: 120px; /* Ancho fijo para todos los botones */
+    height: 40px; /* Altura fija para todos los botones */
+    text-align: center; /* Asegura que el texto esté centrado */
+    display: inline-block; /* Permite que los botones sean tratados como elementos en línea */
+    margin: 5px; /* Espacio alrededor de los botones */
+    font-family: 'Montserrat Light', sans-serif;}
+.btn-cancelar, .regreso-button { background-color: #6c757d; color: #000000;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    width: 120px; /* Ancho fijo para todos los botones */
+    height: 40px; /* Altura fija para todos los botones */
+    text-align: center; /* Asegura que el texto esté centrado */
+    display: inline-block; /* Permite que los botones sean tratados como elementos en línea */
+    margin: 5px; /* Espacio alrededor de los botones */
+    font-family: 'Montserrat Light', sans-serif;}
+.btn:hover { opacity: 0.85; }
+
+/* Media queries para diseño responsivo */
+@media (max-width: 800px) {
+    .contenedor-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulario-general,
+    .tabla-general {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .btn {
+        width: 100%;
+    }
+}

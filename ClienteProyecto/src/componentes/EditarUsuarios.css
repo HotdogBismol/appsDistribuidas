@@ -1,0 +1,79 @@
+/* Tabla Usuarios CSS */
+
+.tabla-usuarios-container {
+    margin: 20px;
+  }
+  
+  .titulo-usuarios {
+    color: #333;
+  }
+  
+  .usuarios-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .input-edicion {
+    width: 80%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+  }
+  
+  .btn-guardar,
+  .btn-cancelar,
+  .btn-editar,
+  .btn-eliminar {
+    padding: 8px 12px;
+    margin-right: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .btn-guardar {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .btn-guardar:hover {
+    background-color: #45a049;
+  }
+  
+  .btn-cancelar {
+    background-color: #e7e7e7;
+  }
+  
+  .btn-cancelar:hover {
+    background-color: #ddd;
+  }
+  
+  .btn-editar {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  .btn-editar:hover {
+    background-color: #0b7dda;
+  }
+  
+  .btn-eliminar {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .btn-eliminar:hover {
+    background-color: #da190b;
+  }
+  

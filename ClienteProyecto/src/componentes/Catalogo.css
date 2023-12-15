@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+.catalogo-container {
+  margin: auto;
+  padding: 0px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.catalogo-lista {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.catalogo-item {
+  background-color: #F4F4F9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  margin: 10px; /* Ajusta el margen para agregar espacio alrededor de cada elemento */
+  padding: 10px;
+  border-radius: 4px;
+  flex: 0 0 calc(25% - 40px); /* Ajusta el flex-basis para tener en cuenta el margen */
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center; /* Alinea los hijos (imagen y text-container) en el centro */
+  text-align: left;
+
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea los elementos de texto a la izquierda */
+  width: 100%; /* Ocupa el ancho completo del contenedor padre */
+}
+
+.catalogo-titulo {
+  font-size: 1.5em; /* Ajusta el tamaño de la fuente como sea necesario */
+  font-weight: 700; /* Montserrat no tiene 'bold', 700 es equivalente */
+  margin: 0 0 0.25em 0; /* Ajusta el margen según sea necesario */
+}
+
+.catalogo-autor {
+  font-size: 1em; /* Ajusta el tamaño de la fuente como sea necesario */
+  font-family: 'Montserrat Light', sans-serif; /* Asegúrate de que Montserrat Light esté importado si deseas usarlo */
+  margin: 0 0 0.25em 0; /* Ajusta el margen según sea necesario */
+}
+
+.catalogo-precio {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25em; /* Ajusta el tamaño de la fuente como sea necesario */
+  color: rgb(141, 27, 27); /* Color del precio */
+  margin: 0 0 0.5em 0; /* Ajusta el margen según sea necesario */
+}
+
+
+.fotito {
+  height: 300px;
+  margin-bottom: 0.5em; /* Añade espacio debajo de la imagen */
+}
+
+.detalle-button {
+  padding: 8px 16px;
+  background-color: #35CE8D;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.detalle-button:hover {
+  background-color: #D90429;
+}
